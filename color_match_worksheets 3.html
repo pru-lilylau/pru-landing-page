@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>顏色配對貼紙工作紙 - A4列印版</title>
+<style>
+  @page { size: A4 portrait; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Noto Sans TC", "PingFang HK", "Microsoft JhengHei", sans-serif;
+    background: #e9e6e0;
+  }
+  .page {
+    width: 210mm;
+    height: 297mm;
+    background: #fffdf8;
+    margin: 10mm auto;
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  }
+  .page:last-child { page-break-after: auto; }
+  .title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    color: #2b2b2b;
+    padding-top: 13mm;
+    letter-spacing: 5px;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    margin-top: 3mm;
+    letter-spacing: 2px;
+  }
+  .art-wrap {
+    width: 100%;
+    height: 222mm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer {
+    position: absolute;
+    bottom: 8mm;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 11px;
+    color: #cbbfa8;
+    letter-spacing: 1px;
+    line-height: 1.6;
+  }
+  svg { width: 100%; height: 100%; }
+  @media print {
+    body { background: #fff; }
+    .page { margin: 0; box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ PAGE 1: 聖誕樹 ============ -->
+<div class="page">
+  <div class="title">聖誕樹裝飾</div>
+  <div class="subtitle">顏色貼紙配對 · 專注力訓練（圓圈 19mm）</div>
+  <div class="art-wrap">
+    <svg viewBox="0 0 700 900" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="s1" x="-10%" y="-10%" width="120%" height="120%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="7" result="n"/>
+          <feDisplacementMap in="SourceGraphic" in2="n" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+        </filter>
+      </defs>
+
+      <g filter="url(#s1)">
+        <!-- sparkles -->
+        <g stroke="#4a4a4a" stroke-width="3.5" fill="none" stroke-linecap="round">
+          <path d="M95 105 L108 118 M108 105 L95 118 M101.5 98 L101.5 125 M88 111.5 L115 111.5"/>
+          <path d="M605 145 L616 156 M616 145 L605 156 M610.5 138 L610.5 163 M597.5 150.5 L623.5 150.5"/>
+          <path d="M55 400 L66 411 M66 400 L55 411 M60.5 393 L60.5 418 M47.5 405.5 L73.5 405.5"/>
+          <path d="M635 465 L646 476 M646 465 L635 476 M640.5 458 L640.5 483 M627.5 470.5 L653.5 470.5"/>
+          <path d="M65 705 L76 716 M76 705 L65 716 M70.5 698 L70.5 723 M57.5 710.5 L83.5 710.5"/>
+        </g>
+        <g fill="#4a4a4a">
+          <circle cx="185" cy="75" r="5"/>
+          <circle cx="525" cy="235" r="5"/>
+          <circle cx="65" cy="275" r="5"/>
+          <circle cx="655" cy="365" r="5"/>
+          <circle cx="135" cy="525" r="5"/>
+          <circle cx="585" cy="555" r="5"/>
+        </g>
+        <!-- little swirl doodles for charm -->
+        <path d="M525 100 C 535 92, 545 100, 538 110 C 531 118, 520 112, 522 103" fill="none" stroke="#4a4a4a" stroke-width="3"/>
+        <path d="M110 640 C 120 632, 130 640, 123 650 C 116 658, 105 652, 107 643" fill="none" stroke="#4a4a4a" stroke-width="3"/>
+
+        <!-- clean layered fir-tree tiers, each a simple rounded triangle -->
+        <g fill="none" stroke="#3f3f3f" stroke-width="8" stroke-linejoin="round" stroke-linecap="round">
+          <path d="M350 150 L452 302 Q350 322 248 302 Z"/>
+          <path d="M350 268 L548 428 Q350 452 152 428 Z"/>
+          <path d="M350 398 L638 558 Q350 586 62 558 Z"/>
+        </g>
+
+        <!-- trunk: bold, simple rectangle so it stays clearly visible -->
+        <rect x="310" y="586" width="80" height="130" rx="8"
+              fill="none" stroke="#4a4a4a" stroke-width="10" stroke-linejoin="round"/>
+
+        <!-- tree topper star -->
+        <path d="M350 78 L360 108 L392 108 L366 127 L376 158 L350 138 L324 158 L334 127 L308 108 L340 108 Z"
+              fill="none" stroke="#e0a422" stroke-width="6" stroke-linejoin="round"/>
+
+        <!-- gift boxes -->
+        <g fill="none" stroke="#3f3f3f" stroke-width="6" stroke-linejoin="round">
+          <rect x="115" y="765" width="75" height="62" rx="3"/>
+          <path d="M115 793 L190 793 M152.5 765 L152.5 827"/>
+          <path d="M124 765 C 108 745, 122 728, 140 740 C 148 745, 150 758, 152.5 765
+                   C 155 758, 157 745, 165 740 C 183 728, 197 745, 181 765" stroke-width="5.5"/>
+          <circle cx="152.5" cy="763" r="7" stroke-width="5"/>
+
+          <rect x="475" y="778" width="62" height="52" rx="3"/>
+          <path d="M475 800 L537 800 M506 778 L506 830"/>
+          <path d="M482 778 C 468 761, 480 747, 496 757 C 502 761, 504 771, 506 778
+                   C 508 771, 510 761, 516 757 C 532 747, 544 761, 530 778" stroke-width="5"/>
+          <circle cx="506" cy="776" r="6" stroke-width="4.5"/>
+
+          <rect x="565" y="798" width="46" height="40" rx="3"/>
+          <path d="M565 814 L611 814 M588 798 L588 838"/>
+          <path d="M571 798 C 560 785, 570 774, 582 782 C 586 785, 587 793, 588 798
+                   C 589 793, 590 785, 594 782 C 606 774, 616 785, 605 798" stroke-width="4.5"/>
+          <circle cx="588" cy="797" r="5" stroke-width="4"/>
+        </g>
+
+        <!-- color circles: uniform 19mm diameter, double-stroke marker feel -->
+        <g fill="none" stroke-width="7.5" stroke-linecap="round">
+          <circle cx="350" cy="222" r="39" stroke="#f2c50f"/>
+          <circle cx="255" cy="352" r="39" stroke="#e0322f"/>
+          <circle cx="350" cy="352" r="39" stroke="#f08a1f"/>
+          <circle cx="445" cy="352" r="39" stroke="#2f8fd6"/>
+          <circle cx="160" cy="482" r="39" stroke="#1fae7a"/>
+          <circle cx="255" cy="482" r="39" stroke="#f2c50f"/>
+          <circle cx="350" cy="482" r="39" stroke="#e84343"/>
+          <circle cx="445" cy="482" r="39" stroke="#2f8fd6"/>
+          <circle cx="540" cy="482" r="39" stroke="#f08a1f"/>
+          <circle cx="65" cy="608" r="39" stroke="#e0322f"/>
+          <circle cx="160" cy="608" r="39" stroke="#f08a1f"/>
+          <circle cx="255" cy="608" r="39" stroke="#1fae7a"/>
+          <circle cx="350" cy="608" r="39" stroke="#f2c50f"/>
+          <circle cx="445" cy="608" r="39" stroke="#2f8fd6"/>
+          <circle cx="540" cy="608" r="39" stroke="#1fae7a"/>
+          <circle cx="635" cy="608" r="39" stroke="#e84343"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+  <div class="footer">由 @pru_lilylau 整理製作<br>follow我IG睇多啲育兒 × 理財內容</div>
+</div>
+
+<!-- ============ PAGE 2: 氣球派對 ============ -->
+<div class="page">
+  <div class="title">氣球派對</div>
+  <div class="subtitle">顏色貼紙配對 · 專注力訓練（圓圈 19mm）</div>
+  <div class="art-wrap">
+    <svg viewBox="0 0 700 900" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="s2" x="-10%" y="-10%" width="120%" height="120%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="4" result="n"/>
+          <feDisplacementMap in="SourceGraphic" in2="n" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+        </filter>
+      </defs>
+      <g filter="url(#s2)">
+        <!-- decorative sparkles, placed only in the empty gap between rows / edges -->
+        <g stroke="#4a4a4a" stroke-width="3.5" fill="none" stroke-linecap="round">
+          <path d="M350 35 L362 47 M362 35 L350 47 M356 28 L356 54 M343 41 L369 41"/>
+          <path d="M35 300 L47 312 M47 300 L35 312 M41 293 L41 319 M28 306 L54 306"/>
+          <path d="M655 300 L667 312 M667 300 L655 312 M661 293 L661 319 M648 306 L674 306"/>
+        </g>
+        <g fill="#4a4a4a">
+          <circle cx="60" cy="620" r="5"/>
+          <circle cx="640" cy="620" r="5"/>
+          <circle cx="350" cy="290" r="5"/>
+        </g>
+
+        <!-- ===== TOP ROW: 6 balloons, evenly spaced ===== -->
+        <g fill="none" stroke="#4a4a4a" stroke-width="3">
+          <path d="M75 256.0 C 75 336.0, 212.5 508.0, 350 760"/>
+          <path d="M185 241.0 C 185 321.0, 267.5 500.5, 350 760"/>
+          <path d="M295 261.0 C 295 341.0, 322.5 510.5, 350 760"/>
+          <path d="M405 241.0 C 405 321.0, 377.5 500.5, 350 760"/>
+          <path d="M515 261.0 C 515 341.0, 432.5 510.5, 350 760"/>
+          <path d="M625 241.0 C 625 321.0, 487.5 510.5, 350 760"/>
+        </g>
+        <g>
+          <path d="M75.0 106.0 C 20.0 106.0, 5.0 166.0, 25.0 211.0 C 40.0 244.0, 110.0 244.0, 125.0 211.0 C 145.0 166.0, 130.0 106.0, 75.0 106.0 Z" fill="none" stroke="#e85a97" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M45.0 131.0 C 39.0 151.0, 39.0 151.0, 51.0 164.0" fill="none" stroke="#e85a97" stroke-width="4" opacity="0.55"/>
+          <path d="M62.0 238.0 L88.0 238.0 L75.0 256.0 Z" fill="none" stroke="#e85a97" stroke-width="5" stroke-linejoin="round"/>
+
+          <path d="M185.0 91.0 C 130.0 91.0, 115.0 151.0, 135.0 196.0 C 150.0 229.0, 220.0 229.0, 235.0 196.0 C 255.0 151.0, 240.0 91.0, 185.0 91.0 Z" fill="none" stroke="#8e6fce" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M155.0 116.0 C 149.0 136.0, 149.0 136.0, 161.0 149.0" fill="none" stroke="#8e6fce" stroke-width="4" opacity="0.55"/>
+          <path d="M172.0 223.0 L198.0 223.0 L185.0 241.0 Z" fill="none" stroke="#8e6fce" stroke-width="5" stroke-linejoin="round"/>
+
+          <path d="M295.0 111.0 C 240.0 111.0, 225.0 171.0, 245.0 216.0 C 260.0 249.0, 330.0 249.0, 345.0 216.0 C 365.0 171.0, 350.0 111.0, 295.0 111.0 Z" fill="none" stroke="#2bb0a8" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M265.0 136.0 C 259.0 156.0, 259.0 156.0, 271.0 169.0" fill="none" stroke="#2bb0a8" stroke-width="4" opacity="0.55"/>
+          <path d="M282.0 243.0 L308.0 243.0 L295.0 261.0 Z" fill="none" stroke="#2bb0a8" stroke-width="5" stroke-linejoin="round"/>
+
+          <path d="M405.0 91.0 C 350.0 91.0, 335.0 151.0, 355.0 196.0 C 370.0 229.0, 440.0 229.0, 455.0 196.0 C 475.0 151.0, 460.0 91.0, 405.0 91.0 Z" fill="none" stroke="#c9985a" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M375.0 116.0 C 369.0 136.0, 369.0 136.0, 381.0 149.0" fill="none" stroke="#c9985a" stroke-width="4" opacity="0.55"/>
+          <path d="M392.0 223.0 L418.0 223.0 L405.0 241.0 Z" fill="none" stroke="#c9985a" stroke-width="5" stroke-linejoin="round"/>
+
+          <path d="M515.0 111.0 C 460.0 111.0, 445.0 171.0, 465.0 216.0 C 480.0 249.0, 550.0 249.0, 565.0 216.0 C 585.0 171.0, 570.0 111.0, 515.0 111.0 Z" fill="none" stroke="#f28fa3" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M485.0 136.0 C 479.0 156.0, 479.0 156.0, 491.0 169.0" fill="none" stroke="#f28fa3" stroke-width="4" opacity="0.55"/>
+          <path d="M502.0 243.0 L528.0 243.0 L515.0 261.0 Z" fill="none" stroke="#f28fa3" stroke-width="5" stroke-linejoin="round"/>
+
+          <path d="M625.0 91.0 C 570.0 91.0, 555.0 151.0, 575.0 196.0 C 590.0 229.0, 660.0 229.0, 675.0 196.0 C 695.0 151.0, 680.0 91.0, 625.0 91.0 Z" fill="none" stroke="#6fb3e0" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M595.0 116.0 C 589.0 136.0, 589.0 136.0, 601.0 149.0" fill="none" stroke="#6fb3e0" stroke-width="4" opacity="0.55"/>
+          <path d="M612.0 223.0 L638.0 223.0 L625.0 241.0 Z" fill="none" stroke="#6fb3e0" stroke-width="5" stroke-linejoin="round"/>
+        </g>
+
+        <!-- ===== BOTTOM ROW: 5 balloons ===== -->
+        <g fill="none" stroke="#4a4a4a" stroke-width="3.5">
+          <path d="M150 511.0 C 150 571.0, 250.0 635.5, 350 760"/>
+          <path d="M260 486.0 C 260 546.0, 305.0 623.0, 350 760"/>
+          <path d="M370 511.0 C 370 571.0, 360.0 635.5, 350 760"/>
+          <path d="M480 486.0 C 480 546.0, 415.0 623.0, 350 760"/>
+          <path d="M590 511.0 C 590 571.0, 470.0 635.5, 350 760"/>
+        </g>
+        <g>
+          <path d="M150.0 361.0 C 95.0 361.0, 80.0 421.0, 100.0 466.0 C 115.0 499.0, 185.0 499.0, 200.0 466.0 C 220.0 421.0, 205.0 361.0, 150.0 361.0 Z" fill="none" stroke="#e0322f" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M120.0 386.0 C 114.0 406.0, 114.0 406.0, 126.0 419.0" fill="none" stroke="#e0322f" stroke-width="4" opacity="0.55"/>
+          <path d="M137.0 493.0 L163.0 493.0 L150.0 511.0 Z" fill="none" stroke="#e0322f" stroke-width="5" stroke-linejoin="round"/>
+
+          <path d="M260.0 336.0 C 205.0 336.0, 190.0 396.0, 210.0 441.0 C 225.0 474.0, 295.0 474.0, 310.0 441.0 C 330.0 396.0, 315.0 336.0, 260.0 336.0 Z" fill="none" stroke="#f2c50f" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M230.0 361.0 C 224.0 381.0, 224.0 381.0, 236.0 394.0" fill="none" stroke="#f2c50f" stroke-width="4" opacity="0.55"/>
+          <path d="M247.0 468.0 L273.0 468.0 L260.0 486.0 Z" fill="none" stroke="#f2c50f" stroke-width="5" stroke-linejoin="round"/>
+
+          <path d="M370.0 361.0 C 315.0 361.0, 300.0 421.0, 320.0 466.0 C 335.0 499.0, 405.0 499.0, 420.0 466.0 C 440.0 421.0, 425.0 361.0, 370.0 361.0 Z" fill="none" stroke="#2f8fd6" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M340.0 386.0 C 334.0 406.0, 334.0 406.0, 346.0 419.0" fill="none" stroke="#2f8fd6" stroke-width="4" opacity="0.55"/>
+          <path d="M357.0 493.0 L383.0 493.0 L370.0 511.0 Z" fill="none" stroke="#2f8fd6" stroke-width="5" stroke-linejoin="round"/>
+
+          <path d="M480.0 336.0 C 425.0 336.0, 410.0 396.0, 430.0 441.0 C 445.0 474.0, 515.0 474.0, 530.0 441.0 C 550.0 396.0, 535.0 336.0, 480.0 336.0 Z" fill="none" stroke="#1fae7a" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M450.0 361.0 C 444.0 381.0, 444.0 381.0, 456.0 394.0" fill="none" stroke="#1fae7a" stroke-width="4" opacity="0.55"/>
+          <path d="M467.0 468.0 L493.0 468.0 L480.0 486.0 Z" fill="none" stroke="#1fae7a" stroke-width="5" stroke-linejoin="round"/>
+
+          <path d="M590.0 361.0 C 535.0 361.0, 520.0 421.0, 540.0 466.0 C 555.0 499.0, 625.0 499.0, 640.0 466.0 C 660.0 421.0, 645.0 361.0, 590.0 361.0 Z" fill="none" stroke="#f08a1f" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M560.0 386.0 C 554.0 406.0, 554.0 406.0, 566.0 419.0" fill="none" stroke="#f08a1f" stroke-width="4" opacity="0.55"/>
+          <path d="M577.0 493.0 L603.0 493.0 L590.0 511.0 Z" fill="none" stroke="#f08a1f" stroke-width="5" stroke-linejoin="round"/>
+        </g>
+
+        <!-- knot bunch where all 11 strings converge -->
+        <path d="M336 760 L364 760 L350 783 Z" fill="none" stroke="#4a4a4a" stroke-width="6" stroke-linejoin="round"/>
+        <path d="M340 767 C 320 773, 315 790, 330 795" fill="none" stroke="#4a4a4a" stroke-width="4"/>
+        <path d="M360 767 C 380 773, 385 790, 370 795" fill="none" stroke="#4a4a4a" stroke-width="4"/>
+      </g>
+    </svg>
+  </div>
+  <div class="footer">由 @pru_lilylau 整理製作<br>follow我IG睇多啲育兒 × 理財內容</div>
+</div>
+
+<!-- ============ PAGE 3: 水果樹 ============ -->
+<div class="page">
+  <div class="title">水果樹</div>
+  <div class="subtitle">顏色貼紙配對 · 專注力訓練（圓圈 19mm）</div>
+  <div class="art-wrap">
+    <svg viewBox="0 0 700 900" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="s3" x="-10%" y="-10%" width="120%" height="120%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="9" result="n"/>
+          <feDisplacementMap in="SourceGraphic" in2="n" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+        </filter>
+      </defs>
+      <g filter="url(#s3)">
+        <g stroke="#4a4a4a" stroke-width="3.5" fill="none" stroke-linecap="round">
+          <path d="M85 155 L97 168 M97 155 L85 168 M91 148 L91 175 M78 161.5 L104 161.5"/>
+          <path d="M600 195 L612 208 M612 195 L600 208 M606 188 L606 215 M593 201.5 L619 201.5"/>
+        </g>
+        <g fill="#4a4a4a">
+          <circle cx="485" cy="105" r="5"/>
+          <circle cx="125" cy="285" r="5"/>
+          <circle cx="615" cy="375" r="5"/>
+        </g>
+        <path d="M540 150 C 550 142, 560 150, 553 160 C 546 168, 535 162, 537 153" fill="none" stroke="#4a4a4a" stroke-width="3"/>
+
+        <!-- trunk with bark texture -->
+        <path d="M312 638 C 310 665, 316 695, 322 748 L378 748 C 384 695, 390 665, 388 638 Z"
+              fill="none" stroke="#4a4a4a" stroke-width="8" stroke-linejoin="round"/>
+        <path d="M330 665 C 332 685, 328 705, 332 725 M368 665 C 366 685, 370 705, 366 725"
+              fill="none" stroke="#4a4a4a" stroke-width="2.5"/>
+
+        <!-- canopy: organic scalloped blob (bumpy leafy edge) -->
+        <path d="M350 120
+                 C 300 100, 240 108, 205 145
+                 C 165 135, 115 165, 108 215
+                 C 70 230, 55 285, 85 325
+                 C 55 360, 65 415, 108 435
+                 C 95 480, 120 530, 168 535
+                 C 175 580, 225 610, 270 590
+                 C 295 630, 355 635, 385 600
+                 C 425 625, 475 605, 480 560
+                 C 530 565, 570 525, 555 480
+                 C 605 460, 615 400, 575 365
+                 C 605 325, 590 265, 545 250
+                 C 555 205, 515 155, 465 165
+                 C 445 125, 385 105, 350 120 Z"
+              fill="none" stroke="#3f7d3a" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+
+        <!-- pot/basket: flush against the trunk base, no floating gap -->
+        <path d="M270 748 L430 748 L403 828 L297 828 Z" fill="none" stroke="#3f3f3f" stroke-width="6" stroke-linejoin="round"/>
+        <path d="M256 748 C 256 736, 444 736, 444 748" fill="none" stroke="#3f3f3f" stroke-width="6"/>
+        <path d="M281 772 L419 772 M288 798 L412 798" fill="none" stroke="#3f3f3f" stroke-width="3" opacity="0.7"/>
+
+        <!-- fruits with tiny stem+leaf, 19mm circles -->
+        <g stroke-width="7.5" fill="none" stroke-linecap="round">
+          <g><circle cx="255" cy="225" r="39" stroke="#e0322f"/><path d="M255 186 L253 172" stroke="#4a4a4a" stroke-width="4"/><path d="M253 176 C 245 170, 238 175, 240 183" stroke="#3f7d3a" stroke-width="4"/></g>
+          <g><circle cx="350" cy="215" r="39" stroke="#f2c50f"/><path d="M350 176 L348 162" stroke="#4a4a4a" stroke-width="4"/><path d="M348 166 C 340 160, 333 165, 335 173" stroke="#3f7d3a" stroke-width="4"/></g>
+          <g><circle cx="445" cy="225" r="39" stroke="#f08a1f"/><path d="M445 186 L443 172" stroke="#4a4a4a" stroke-width="4"/><path d="M443 176 C 435 170, 428 175, 430 183" stroke="#3f7d3a" stroke-width="4"/></g>
+
+          <g><circle cx="160" cy="355" r="39" stroke="#1fae7a"/><path d="M160 316 L158 302" stroke="#4a4a4a" stroke-width="4"/><path d="M158 306 C 150 300, 143 305, 145 313" stroke="#3f7d3a" stroke-width="4"/></g>
+          <g><circle cx="255" cy="345" r="39" stroke="#2f8fd6"/><path d="M255 306 L253 292" stroke="#4a4a4a" stroke-width="4"/><path d="M253 296 C 245 290, 238 295, 240 303" stroke="#3f7d3a" stroke-width="4"/></g>
+          <g><circle cx="350" cy="355" r="39" stroke="#e0322f"/><path d="M350 316 L348 302" stroke="#4a4a4a" stroke-width="4"/><path d="M348 306 C 340 300, 333 305, 335 313" stroke="#3f7d3a" stroke-width="4"/></g>
+          <g><circle cx="445" cy="345" r="39" stroke="#f2c50f"/><path d="M445 306 L443 292" stroke="#4a4a4a" stroke-width="4"/><path d="M443 296 C 435 290, 428 295, 430 303" stroke="#3f7d3a" stroke-width="4"/></g>
+          <g><circle cx="540" cy="355" r="39" stroke="#f08a1f"/><path d="M540 316 L538 302" stroke="#4a4a4a" stroke-width="4"/><path d="M538 306 C 530 300, 523 305, 525 313" stroke="#3f7d3a" stroke-width="4"/></g>
+
+          <g><circle cx="205" cy="485" r="39" stroke="#2f8fd6"/><path d="M205 446 L203 432" stroke="#4a4a4a" stroke-width="4"/><path d="M203 436 C 195 430, 188 435, 190 443" stroke="#3f7d3a" stroke-width="4"/></g>
+          <g><circle cx="300" cy="475" r="39" stroke="#1fae7a"/><path d="M300 436 L298 422" stroke="#4a4a4a" stroke-width="4"/><path d="M298 426 C 290 420, 283 425, 285 433" stroke="#3f7d3a" stroke-width="4"/></g>
+          <g><circle cx="400" cy="475" r="39" stroke="#e84343"/><path d="M400 436 L398 422" stroke="#4a4a4a" stroke-width="4"/><path d="M398 426 C 390 420, 383 425, 385 433" stroke="#3f7d3a" stroke-width="4"/></g>
+          <g><circle cx="495" cy="485" r="39" stroke="#f2c50f"/><path d="M495 446 L493 432" stroke="#4a4a4a" stroke-width="4"/><path d="M493 436 C 485 430, 478 435, 480 443" stroke="#3f7d3a" stroke-width="4"/></g>
+
+          <g><circle cx="255" cy="605" r="39" stroke="#f08a1f"/><path d="M255 566 L253 552" stroke="#4a4a4a" stroke-width="4"/><path d="M253 556 C 245 550, 238 555, 240 563" stroke="#3f7d3a" stroke-width="4"/></g>
+          <g><circle cx="350" cy="615" r="39" stroke="#1fae7a"/><path d="M350 576 L348 562" stroke="#4a4a4a" stroke-width="4"/><path d="M348 566 C 340 560, 333 565, 335 573" stroke="#3f7d3a" stroke-width="4"/></g>
+          <g><circle cx="445" cy="605" r="39" stroke="#2f8fd6"/><path d="M445 566 L443 552" stroke="#4a4a4a" stroke-width="4"/><path d="M443 556 C 435 550, 428 555, 430 563" stroke="#3f7d3a" stroke-width="4"/></g>
+        </g>
+
+      </g>
+    </svg>
+  </div>
+  <div class="footer">由 @pru_lilylau 整理製作<br>follow我IG睇多啲育兒 × 理財內容</div>
+</div>
+
+
+<!-- ============ PAGE 5: 蝴蝶 ============ -->
+<div class="page">
+  <div class="title">蝴蝶</div>
+  <div class="subtitle">顏色貼紙配對 · 對稱練習（圓圈 19mm）</div>
+  <div class="art-wrap">
+    <svg viewBox="0 0 700 900" xmlns="http://www.w3.org/2000/svg">
+      <defs><filter id="s5" x="-10%" y="-10%" width="120%" height="120%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="13" result="n"/>
+        <feDisplacementMap in="SourceGraphic" in2="n" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+      </filter></defs>
+      <g filter="url(#s5)">
+        <!-- sparkles + flowers around the scene -->
+        <g stroke="#4a4a4a" stroke-width="3.5" fill="none" stroke-linecap="round">
+          <path d="M60 120 L72 132 M72 120 L60 132 M66 114 L66 138 M54 126 L78 126"/>
+          <path d="M630 150 L642 162 M642 150 L630 162 M636 144 L636 168 M624 156 L648 156"/>
+          <path d="M60 700 L72 712 M72 700 L60 712 M66 694 L66 718 M54 706 L78 706"/>
+          <path d="M630 690 L642 702 M642 690 L630 702 M636 684 L636 708 M624 696 L648 696"/>
+        </g>
+        <g fill="none" stroke="#3f7d3a" stroke-width="4">
+          <path d="M80 640 C 60 630, 55 650, 72 658 C 58 668, 68 686, 86 678"/>
+          <path d="M620 640 C 640 630, 645 650, 628 658 C 642 668, 632 686, 614 678"/>
+        </g>
+        <g fill="#4a4a4a"><circle cx="150" cy="90" r="5"/><circle cx="550" cy="700" r="5"/></g>
+
+        <!-- antennae with curled tips -->
+        <path d="M350 236.7 C 327 210.3, 292.5 216, 298.2 239 M350 236.7 C 373 210.3, 407.5 216, 401.8 239"
+              fill="none" stroke="#4a4a4a" stroke-width="4.5" stroke-linecap="round"/>
+        <circle cx="292" cy="216" r="6" fill="none" stroke="#4a4a4a" stroke-width="3.5"/>
+        <circle cx="408" cy="216" r="6" fill="none" stroke="#4a4a4a" stroke-width="3.5"/>
+
+        <!-- body with segment lines -->
+        <path d="M350 239 C 338.5 239, 332.8 273.5, 338.5 331 C 332.8 400, 332.8 469, 344.2 561
+                 C 332.8 584, 338.5 607, 350 612.8 C 361.5 607, 367.2 584, 355.8 561
+                 C 367.2 469, 367.2 400, 361.5 331 C 367.2 273.5, 361.5 239, 350 239 Z"
+              fill="none" stroke="#4a4a4a" stroke-width="7" stroke-linejoin="round"/>
+        <path d="M336 300 L364 300 M334 380 L366 380 M336 460 L364 460 M338 540 L362 540"
+              fill="none" stroke="#4a4a4a" stroke-width="2.5" opacity="0.55"/>
+
+        <!-- right wing: bigger, richer outline -->
+        <path d="M355.8 285 C 442 193, 591.5 216, 626 331 C 654.8 423, 591.5 480.5, 499.5 457.5
+                 C 545.5 515, 522.5 595.5, 442 584 C 407.5 578.2, 373 538, 359.2 492 Z"
+              fill="none" stroke="#3f3f3f" stroke-width="7.5" stroke-linejoin="round"/>
+        <!-- inner wing vein detail -->
+        <path d="M370 320 C 440 300, 520 310, 560 350 M375 470 C 430 480, 480 500, 500 530
+                 M400 300 C 420 340, 430 380, 420 420 M540 250 C 560 290, 580 330, 575 370"
+              fill="none" stroke="#3f3f3f" stroke-width="2.5" opacity="0.45"/>
+        <!-- small scalloped accent dots tracing part of the wing edge -->
+        <g fill="#3f3f3f" opacity="0.5">
+          <circle cx="470" cy="220" r="3"/><circle cx="530" cy="230" r="3"/><circle cx="590" cy="270" r="3"/>
+          <circle cx="450" cy="530" r="3"/><circle cx="480" cy="565" r="3"/>
+        </g>
+        <g fill="none" stroke-width="7.5" stroke-linecap="round">
+          <circle cx="460" cy="300" r="32" stroke="#e0322f"/>
+          <circle cx="545" cy="290" r="32" stroke="#f2c50f"/>
+          <circle cx="590" cy="355" r="32" stroke="#2f8fd6"/>
+          <circle cx="545" cy="415" r="32" stroke="#1fae7a"/>
+          <circle cx="460" cy="455" r="32" stroke="#f08a1f"/>
+          <circle cx="410" cy="505" r="32" stroke="#e84343"/>
+          <circle cx="398" cy="388" r="32" stroke="#8e6fce"/>
+          <circle cx="500" cy="375" r="32" stroke="#2bb0a8"/>
+        </g>
+
+        <!-- left wing (blank outline, mirrored, for child to replicate) -->
+        <path d="M344.2 285 C 258 193, 108.5 216, 74 331 C 45.2 423, 108.5 480.5, 200.5 457.5
+                 C 154.5 515, 177.5 595.5, 258 584 C 292.5 578.2, 327 538, 340.8 492 Z"
+              fill="none" stroke="#3f3f3f" stroke-width="7.5" stroke-linejoin="round"/>
+        <path d="M330 320 C 260 300, 180 310, 140 350 M325 470 C 270 480, 220 500, 200 530
+                 M300 300 C 280 340, 270 380, 280 420 M160 250 C 140 290, 120 330, 125 370"
+              fill="none" stroke="#3f3f3f" stroke-width="2.5" opacity="0.3" stroke-dasharray="4 4"/>
+        <g fill="#999" opacity="0.35">
+          <circle cx="230" cy="220" r="3"/><circle cx="170" cy="230" r="3"/><circle cx="110" cy="270" r="3"/>
+          <circle cx="250" cy="530" r="3"/><circle cx="220" cy="565" r="3"/>
+        </g>
+        <g fill="none" stroke-width="2.5" stroke-dasharray="6 6" opacity="0.5">
+          <circle cx="240" cy="300" r="32" stroke="#999"/>
+          <circle cx="155" cy="290" r="32" stroke="#999"/>
+          <circle cx="110" cy="355" r="32" stroke="#999"/>
+          <circle cx="155" cy="415" r="32" stroke="#999"/>
+          <circle cx="240" cy="455" r="32" stroke="#999"/>
+          <circle cx="290" cy="505" r="32" stroke="#999"/>
+          <circle cx="302" cy="388" r="32" stroke="#999"/>
+          <circle cx="200" cy="375" r="32" stroke="#999"/>
+        </g>
+
+        <!-- small flower doodles near the base -->
+        <g fill="none" stroke="#4a4a4a" stroke-width="3">
+          <circle cx="255" cy="660" r="6"/>
+          <circle cx="245" cy="650" r="7"/><circle cx="265" cy="650" r="7"/>
+          <circle cx="245" cy="670" r="7"/><circle cx="265" cy="670" r="7"/>
+          <path d="M255 667 L255 700" stroke="#3f7d3a"/>
+        </g>
+        <g fill="none" stroke="#4a4a4a" stroke-width="3">
+          <circle cx="450" cy="655" r="5"/>
+          <circle cx="442" cy="647" r="6"/><circle cx="458" cy="647" r="6"/>
+          <circle cx="442" cy="663" r="6"/><circle cx="458" cy="663" r="6"/>
+          <path d="M450 661 L450 695" stroke="#3f7d3a"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+  <div class="footer">由 @pru_lilylau 整理製作<br>follow我IG睇多啲育兒 × 理財內容</div>
+</div>
+
+<!-- ============ PAGE 10: 毛毛蟲 ============ -->
+<div class="page">
+  <div class="title">毛毛蟲身體</div>
+  <div class="subtitle">顏色貼紙配對 · 專注力訓練（圓圈 19mm）</div>
+  <div class="art-wrap">
+    <svg viewBox="0 0 700 900" xmlns="http://www.w3.org/2000/svg">
+      <defs><filter id="s10" x="-10%" y="-10%" width="120%" height="120%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="27" result="n"/>
+        <feDisplacementMap in="SourceGraphic" in2="n" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+      </filter></defs>
+      <g filter="url(#s10)">
+        <!-- sun -->
+        <circle cx="620" cy="80" r="34" fill="none" stroke="#f2c50f" stroke-width="6"/>
+        <g stroke="#f2c50f" stroke-width="5" stroke-linecap="round">
+          <path d="M620 32 L620 16 M620 128 L620 144 M667 80 L683 80 M573 80 L557 80
+                   M652 49 L664 37 M652 111 L664 123 M588 49 L576 37 M588 111 L576 123"/>
+        </g>
+
+        <!-- ground line + grass tufts -->
+        <path d="M20 830 Q 350 812 680 830" fill="none" stroke="#3f7d3a" stroke-width="5"/>
+        <g fill="none" stroke="#3f7d3a" stroke-width="4" stroke-linecap="round">
+          <path d="M60 830 Q 65 810 75 830 M75 830 Q 85 803 95 830"/>
+          <path d="M300 830 Q 305 810 315 830 M315 830 Q 325 803 335 830"/>
+          <path d="M560 830 Q 565 813 575 830 M575 830 Q 585 805 595 830"/>
+        </g>
+        <!-- leaf doodles at the sides -->
+        <path d="M35 250 C 10 235, 5 260, 25 270 C 10 280, 20 300, 40 290" fill="none" stroke="#3f7d3a" stroke-width="4"/>
+        <path d="M665 210 C 690 195, 695 220, 675 230 C 690 240, 680 260, 660 250" fill="none" stroke="#3f7d3a" stroke-width="4"/>
+
+        <!-- ===== CATERPILLAR 1: head on the left ===== -->
+        <path d="M65 320 L48 278 M115 320 L128 276" fill="none" stroke="#4a4a4a" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="47" cy="272" r="6" fill="none" stroke="#4a4a4a" stroke-width="3.5"/>
+        <circle cx="129" cy="270" r="6" fill="none" stroke="#4a4a4a" stroke-width="3.5"/>
+
+        <g fill="none" stroke-width="7.5">
+          <circle cx="90" cy="370" r="39" stroke="#e0322f"/>
+          <path d="M75 370 C 78 382, 102 382, 105 370" stroke="#4a4a4a" stroke-width="4" fill="none"/>
+          <circle cx="75" cy="358" r="4" fill="#4a4a4a" stroke="none"/>
+          <circle cx="105" cy="358" r="4" fill="#4a4a4a" stroke="none"/>
+
+          <circle cx="170" cy="430" r="39" stroke="#f2c50f"/>
+          <circle cx="250" cy="390" r="39" stroke="#2f8fd6"/>
+          <circle cx="330" cy="430" r="39" stroke="#1fae7a"/>
+          <circle cx="410" cy="390" r="39" stroke="#f08a1f"/>
+          <circle cx="490" cy="430" r="39" stroke="#e84343"/>
+          <circle cx="570" cy="390" r="39" stroke="#8e6fce"/>
+          <circle cx="650" cy="430" r="39" stroke="#2bb0a8"/>
+        </g>
+        <!-- curled tail, extends beyond the last segment on the right -->
+        <path d="M676 456 C 690 450, 696 460, 688 467 C 682 471, 674 466, 677 459"
+              fill="none" stroke="#4a4a4a" stroke-width="3.5" stroke-linecap="round"/>
+
+        <!-- short, chunky cute legs under every single segment -->
+        <g fill="none" stroke="#4a4a4a" stroke-width="6" stroke-linecap="round">
+          <path d="M76 402 L71 416 M104 402 L109 416"/>
+          <path d="M156 462 L151 476 M184 462 L189 476"/>
+          <path d="M236 422 L231 436 M264 422 L269 436"/>
+          <path d="M316 462 L311 476 M344 462 L349 476"/>
+          <path d="M396 422 L391 436 M424 422 L429 436"/>
+          <path d="M476 462 L471 476 M504 462 L509 476"/>
+          <path d="M556 422 L551 436 M584 422 L589 436"/>
+          <path d="M636 462 L631 476 M664 462 L669 476"/>
+        </g>
+
+        <!-- ===== CATERPILLAR 2: same 19mm circles, mirrored so the head faces right, moved further down ===== -->
+        <path d="M675 580 L692 538 M625 580 L612 536" fill="none" stroke="#4a4a4a" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="692" cy="532" r="6" fill="none" stroke="#4a4a4a" stroke-width="3.5"/>
+        <circle cx="611" cy="530" r="6" fill="none" stroke="#4a4a4a" stroke-width="3.5"/>
+
+        <g fill="none" stroke-width="7.5">
+          <circle cx="650" cy="630" r="39" stroke="#2f8fd6"/>
+          <path d="M635 630 C 638 642, 662 642, 665 630" stroke="#4a4a4a" stroke-width="4" fill="none"/>
+          <circle cx="635" cy="618" r="4" fill="#4a4a4a" stroke="none"/>
+          <circle cx="665" cy="618" r="4" fill="#4a4a4a" stroke="none"/>
+
+          <circle cx="570" cy="690" r="39" stroke="#1fae7a"/>
+          <circle cx="490" cy="650" r="39" stroke="#f08a1f"/>
+          <circle cx="410" cy="690" r="39" stroke="#e0322f"/>
+          <circle cx="330" cy="650" r="39" stroke="#f2c50f"/>
+          <circle cx="250" cy="690" r="39" stroke="#8e6fce"/>
+          <circle cx="170" cy="650" r="39" stroke="#2bb0a8"/>
+          <circle cx="90" cy="690" r="39" stroke="#e84343"/>
+        </g>
+        <!-- curled tail, extends beyond the last segment on the left -->
+        <path d="M64 716 C 50 710, 44 720, 52 727 C 58 731, 66 726, 63 719"
+              fill="none" stroke="#4a4a4a" stroke-width="3.5" stroke-linecap="round"/>
+
+        <!-- short, chunky cute legs under every single segment -->
+        <g fill="none" stroke="#4a4a4a" stroke-width="6" stroke-linecap="round">
+          <path d="M636 662 L631 676 M664 662 L669 676"/>
+          <path d="M556 722 L551 736 M584 722 L589 736"/>
+          <path d="M476 682 L471 696 M504 682 L509 696"/>
+          <path d="M396 722 L391 736 M424 722 L429 736"/>
+          <path d="M316 682 L311 696 M344 682 L349 696"/>
+          <path d="M236 722 L231 736 M264 722 L269 736"/>
+          <path d="M156 682 L151 696 M184 682 L189 696"/>
+          <path d="M76 722 L71 736 M104 722 L109 736"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+  <div class="footer">由 @pru_lilylau 整理製作<br>follow我IG睇多啲育兒 × 理財內容</div>
+</div>
+
+<!-- ============ PAGE 13: 公仔車車 ============ -->
+<div class="page">
+  <div class="title">公仔車車</div>
+  <div class="subtitle">顏色貼紙配對 · 專注力訓練（圓圈 19mm）</div>
+  <div class="art-wrap">
+    <svg viewBox="0 0 700 900" xmlns="http://www.w3.org/2000/svg">
+      <defs><filter id="s13" x="-10%" y="-10%" width="120%" height="120%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="33" result="n"/>
+        <feDisplacementMap in="SourceGraphic" in2="n" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+      </filter></defs>
+      <g filter="url(#s13)">
+        <!-- one small cloud at the very top -->
+        <path d="M120 45 C 105 45, 100 65, 115 70 C 108 83, 132 87, 140 75 C 155 85, 175 75, 168 61 C 182 58, 178 41, 160 44 C 156 30, 132 30, 128 44 Z"
+              fill="none" stroke="#4a4a4a" stroke-width="4"/>
+
+        <!-- ===== CAR 1 (same simple design, repeated) ===== -->
+        <g>
+          <path d="M40 300 L660 300" fill="none" stroke="#4a4a4a" stroke-width="6"/>
+          <path d="M90 300 L140 300 M220 300 L270 300 M350 300 L400 300 M480 300 L530 300 M580 300 L630 300"
+                fill="none" stroke="#4a4a4a" stroke-width="6" opacity="0.5"/>
+          <path d="M120 220 L120 160 C 120 140, 140 130, 160 130 L260 130 C 280 100, 320 80, 380 80
+                   C 440 80, 470 100, 480 130 L540 130 C 560 130, 580 140, 580 160 L580 220 Z"
+                fill="none" stroke="#3f3f3f" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M120 220 L580 220" fill="none" stroke="#3f3f3f" stroke-width="8"/>
+          <rect x="225" y="140" width="85" height="45" rx="10" fill="none" stroke="#3f3f3f" stroke-width="6"/>
+          <rect x="450" y="140" width="85" height="45" rx="10" fill="none" stroke="#3f3f3f" stroke-width="6"/>
+          <rect x="546" y="195" width="20" height="14" rx="4" fill="none" stroke="#3f3f3f" stroke-width="4"/>
+          <path d="M380 130 L380 220" fill="none" stroke="#3f3f3f" stroke-width="4" opacity="0.6"/>
+
+          <path d="M170 240 C 170 220, 220 220, 220 240" fill="none" stroke="#3f3f3f" stroke-width="3" opacity="0.5"/>
+          <path d="M485 240 C 485 220, 535 220, 535 240" fill="none" stroke="#3f3f3f" stroke-width="3" opacity="0.5"/>
+          <g fill="none" stroke-width="9">
+            <circle cx="195" cy="252" r="45" stroke="#e0322f"/>
+            <circle cx="510" cy="252" r="45" stroke="#1fae7a"/>
+          </g>
+          <circle cx="195" cy="252" r="13" fill="none" stroke="#4a4a4a" stroke-width="4"/>
+          <circle cx="510" cy="252" r="13" fill="none" stroke="#4a4a4a" stroke-width="4"/>
+        </g>
+
+        <!-- ===== CAR 2 (same simple design, repeated) ===== -->
+        <g transform="translate(0,300)">
+          <path d="M40 300 L660 300" fill="none" stroke="#4a4a4a" stroke-width="6"/>
+          <path d="M90 300 L140 300 M220 300 L270 300 M350 300 L400 300 M480 300 L530 300 M580 300 L630 300"
+                fill="none" stroke="#4a4a4a" stroke-width="6" opacity="0.5"/>
+          <path d="M120 220 L120 160 C 120 140, 140 130, 160 130 L260 130 C 280 100, 320 80, 380 80
+                   C 440 80, 470 100, 480 130 L540 130 C 560 130, 580 140, 580 160 L580 220 Z"
+                fill="none" stroke="#3f3f3f" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M120 220 L580 220" fill="none" stroke="#3f3f3f" stroke-width="8"/>
+          <rect x="225" y="140" width="85" height="45" rx="10" fill="none" stroke="#3f3f3f" stroke-width="6"/>
+          <rect x="450" y="140" width="85" height="45" rx="10" fill="none" stroke="#3f3f3f" stroke-width="6"/>
+          <rect x="546" y="195" width="20" height="14" rx="4" fill="none" stroke="#3f3f3f" stroke-width="4"/>
+          <path d="M380 130 L380 220" fill="none" stroke="#3f3f3f" stroke-width="4" opacity="0.6"/>
+
+          <path d="M170 240 C 170 220, 220 220, 220 240" fill="none" stroke="#3f3f3f" stroke-width="3" opacity="0.5"/>
+          <path d="M485 240 C 485 220, 535 220, 535 240" fill="none" stroke="#3f3f3f" stroke-width="3" opacity="0.5"/>
+          <g fill="none" stroke-width="9">
+            <circle cx="195" cy="252" r="45" stroke="#f2c50f"/>
+            <circle cx="510" cy="252" r="45" stroke="#2f8fd6"/>
+          </g>
+          <circle cx="195" cy="252" r="13" fill="none" stroke="#4a4a4a" stroke-width="4"/>
+          <circle cx="510" cy="252" r="13" fill="none" stroke="#4a4a4a" stroke-width="4"/>
+        </g>
+
+        <!-- ===== CAR 3 (same simple design, repeated) ===== -->
+        <g transform="translate(0,590)">
+          <path d="M40 300 L660 300" fill="none" stroke="#4a4a4a" stroke-width="6"/>
+          <path d="M90 300 L140 300 M220 300 L270 300 M350 300 L400 300 M480 300 L530 300 M580 300 L630 300"
+                fill="none" stroke="#4a4a4a" stroke-width="6" opacity="0.5"/>
+          <path d="M120 220 L120 160 C 120 140, 140 130, 160 130 L260 130 C 280 100, 320 80, 380 80
+                   C 440 80, 470 100, 480 130 L540 130 C 560 130, 580 140, 580 160 L580 220 Z"
+                fill="none" stroke="#3f3f3f" stroke-width="8" stroke-linejoin="round"/>
+          <path d="M120 220 L580 220" fill="none" stroke="#3f3f3f" stroke-width="8"/>
+          <rect x="225" y="140" width="85" height="45" rx="10" fill="none" stroke="#3f3f3f" stroke-width="6"/>
+          <rect x="450" y="140" width="85" height="45" rx="10" fill="none" stroke="#3f3f3f" stroke-width="6"/>
+          <rect x="546" y="195" width="20" height="14" rx="4" fill="none" stroke="#3f3f3f" stroke-width="4"/>
+          <path d="M380 130 L380 220" fill="none" stroke="#3f3f3f" stroke-width="4" opacity="0.6"/>
+
+          <path d="M170 240 C 170 220, 220 220, 220 240" fill="none" stroke="#3f3f3f" stroke-width="3" opacity="0.5"/>
+          <path d="M485 240 C 485 220, 535 220, 535 240" fill="none" stroke="#3f3f3f" stroke-width="3" opacity="0.5"/>
+          <g fill="none" stroke-width="9">
+            <circle cx="195" cy="252" r="45" stroke="#f08a1f"/>
+            <circle cx="510" cy="252" r="45" stroke="#8e6fce"/>
+          </g>
+          <circle cx="195" cy="252" r="13" fill="none" stroke="#4a4a4a" stroke-width="4"/>
+          <circle cx="510" cy="252" r="13" fill="none" stroke="#4a4a4a" stroke-width="4"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+  <div class="footer">由 @pru_lilylau 整理製作<br>follow我IG睇多啲育兒 × 理財內容</div>
+</div>
+
+
+<!-- ============ PAGE 17: 提子 ============ -->
+<div class="page">
+  <div class="title">一串提子</div>
+  <div class="subtitle">顏色貼紙配對 · 專注力訓練（圓圈 19mm）</div>
+  <div class="art-wrap">
+    <svg viewBox="0 0 700 900" xmlns="http://www.w3.org/2000/svg">
+      <defs><filter id="s17" x="-10%" y="-10%" width="120%" height="120%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="47" result="n"/>
+        <feDisplacementMap in="SourceGraphic" in2="n" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+      </filter></defs>
+      <g filter="url(#s17)">
+        <g fill="#4a4a4a">
+          <circle cx="110" cy="150" r="5"/><circle cx="590" cy="200" r="5"/>
+          <circle cx="130" cy="700" r="5"/><circle cx="580" cy="650" r="5"/>
+        </g>
+        <g stroke="#4a4a4a" stroke-width="3.5" fill="none" stroke-linecap="round">
+          <path d="M80 300 L92 312 M92 300 L80 312 M86 294 L86 318 M74 306 L98 306"/>
+          <path d="M610 380 L622 392 M622 380 L610 392 M616 374 L616 398 M604 386 L628 386"/>
+        </g>
+
+        <!-- vine stem -->
+        <path d="M340 120 L340 214" fill="none" stroke="#3f7d3a" stroke-width="8" stroke-linecap="round"/>
+        <!-- ribbon bow tied on the stem -->
+        <path d="M320 175 C 300 165, 292 180, 305 188 C 295 196, 300 210, 318 202
+                 C 320 208, 328 208, 330 202 C 340 208, 350 196, 340 188 C 352 180, 344 165, 328 175
+                 C 330 168, 320 168, 320 175 Z"
+              fill="none" stroke="#e0322f" stroke-width="5" stroke-linejoin="round"/>
+        <!-- curly tendrils, two of them -->
+        <path d="M340 150 C 372 142, 398 156, 390 182 C 384 200, 360 200, 358 181 C 357 168, 368 160, 378 165"
+              fill="none" stroke="#3f7d3a" stroke-width="5" stroke-linecap="round"/>
+        <path d="M340 135 C 315 122, 292 130, 296 150 C 299 164, 316 166, 320 152 C 322 143, 314 137, 306 141"
+              fill="none" stroke="#3f7d3a" stroke-width="4.5" stroke-linecap="round"/>
+
+        <!-- two leaves either side of the stem, with vein detail -->
+        <path d="M340 150 C 295 126, 240 140, 232 178 C 227 206, 258 226, 292 210
+                 C 316 199, 334 176, 340 150 Z"
+              fill="none" stroke="#3f7d3a" stroke-width="6" stroke-linejoin="round"/>
+        <path d="M300 168 C 290 178, 278 188, 262 195 M310 178 C 300 186, 288 194, 278 199"
+              fill="none" stroke="#3f7d3a" stroke-width="2.5" opacity="0.6"/>
+
+        <path d="M340 150 C 385 124, 440 138, 448 176 C 453 204, 422 224, 388 208
+                 C 364 197, 346 175, 340 150 Z"
+              fill="none" stroke="#3f7d3a" stroke-width="6" stroke-linejoin="round"/>
+        <path d="M382 168 C 392 178, 404 188, 420 195 M372 178 C 382 186, 394 194, 404 199"
+              fill="none" stroke="#3f7d3a" stroke-width="2.5" opacity="0.6"/>
+
+        <!-- ladybug doodle resting on the left leaf -->
+        <g fill="none" stroke="#4a4a4a" stroke-width="3">
+          <path d="M260 178 C 248 178, 244 194, 256 200 C 264 204, 272 204, 280 200 C 292 194, 288 178, 276 178 Z" stroke="#e0322f"/>
+          <path d="M268 178 L268 200" stroke="#4a4a4a"/>
+          <circle cx="262" cy="186" r="2" fill="#4a4a4a" stroke="none"/>
+          <circle cx="274" cy="190" r="2" fill="#4a4a4a" stroke="none"/>
+          <path d="M260 178 C 256 170, 251 168, 247 170 M276 178 C 280 170, 285 168, 289 170" stroke="#4a4a4a" stroke-width="2.5"/>
+        </g>
+
+        <!-- grape bunch: 15 circles tapering to a point -->
+        <g fill="none" stroke-width="7.5">
+          <circle cx="170" cy="250" r="39" stroke="#e0322f"/>
+          <circle cx="255" cy="250" r="39" stroke="#f2c50f"/>
+          <circle cx="340" cy="250" r="39" stroke="#2f8fd6"/>
+          <circle cx="425" cy="250" r="39" stroke="#1fae7a"/>
+          <circle cx="510" cy="250" r="39" stroke="#f08a1f"/>
+
+          <circle cx="212" cy="335" r="39" stroke="#8e6fce"/>
+          <circle cx="297" cy="335" r="39" stroke="#e0322f"/>
+          <circle cx="382" cy="335" r="39" stroke="#f2c50f"/>
+          <circle cx="467" cy="335" r="39" stroke="#2f8fd6"/>
+
+          <circle cx="255" cy="420" r="39" stroke="#1fae7a"/>
+          <circle cx="340" cy="420" r="39" stroke="#f08a1f"/>
+          <circle cx="425" cy="420" r="39" stroke="#8e6fce"/>
+
+          <circle cx="297" cy="505" r="39" stroke="#e0322f"/>
+          <circle cx="382" cy="505" r="39" stroke="#f2c50f"/>
+
+          <circle cx="340" cy="590" r="39" stroke="#2f8fd6"/>
+        </g>
+        <!-- little dew-highlight curls on a few grapes for extra sparkle -->
+        <g fill="none" stroke="#fff" stroke-width="3" opacity="0.55" stroke-linecap="round">
+          <path d="M150 235 C 148 245, 150 255, 156 260"/>
+          <path d="M320 235 C 318 245, 320 255, 326 260"/>
+          <path d="M277 320 C 275 330, 277 340, 283 345"/>
+          <path d="M362 490 C 360 500, 362 510, 368 515"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+  <div class="footer">由 @pru_lilylau 整理製作<br>follow我IG睇多啲育兒 × 理財內容</div>
+</div>
+
+</body>
+</html>
